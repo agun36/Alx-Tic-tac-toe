@@ -1,14 +1,14 @@
 // Importing necessary components and constants
 import { useState } from "react";
 import "../App/App.scss";
-import GameBoard from "../components/GameBoard/GameBoard";
-import Log from "../components/Log/Log";
-import Player from "../components/Player/Player";
+import GameBoard from "../components/GameBoard/GameBoard.jsx";
+import Log from "../components/Log/Log.jsx";
+import Player from "../components/Player/Player.jsx";
 import { WINNING_COMBINATIONS } from "../Winning-combinations";
-import { GameOver } from "../components/GameOver/GameOver";
+import { GameOver } from "../components/GameOver/GameOver.jsx";
 import { PLAYERS } from "../PlayersSynbol";
 import { INITIAL_GAME_BOARD } from "../InitialGameBoard"; 
-import Header from "../components/Header/Header";
+import Header from "../components/Header/Header.jsx";
 
 // Function to determine the active player based on the game turns
 const deriveActivePlayer = (gameTurns) => {
